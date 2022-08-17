@@ -1,0 +1,140 @@
+@import '../../assets/scss/color';
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.navigation {
+  width: 100%;
+  height: ($navigation-height) + px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: get-color('white');
+  box-shadow: -3px 0px 9px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  transition: background-color .1s ease-out;
+}
+
+.navigationSticky {
+  transition: background-color .1s ease-in;
+  background-color: get-color('white');
+
+  .itemsWrapper {
+    color: get-color('black')
+  }
+
+  .menuItemActive {
+    border-bottom: 3px solid get-color('red');
+  }
+}
+
+.navBarWrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 25% 50% 25%;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.buttonsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0;
+  > *:not(:last-child) {
+    margin-right: 15px;
+  }
+  @include breakpoint(tablet) {
+    padding-right: 10px;
+  }
+
+  @include breakpoint(desktop) {
+    padding-right: 50px;
+  }
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  @include breakpoint(mobile) {
+    max-width: 140px;
+  }
+}
+
+.itemsWrapper {
+  display: flex;
+  align-items: center;
+  color: get-color('white');
+  font-weight: 700;
+  font-size: 12px;
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+.menuItem {
+  padding: 5px 0;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &:hover {
+    border-bottom: 3px solid get-color('red');
+  }
+}
+
+.menuItemActive {
+  font-weight: 500;
+  border-bottom: 3px solid get-color('white');
+}
+
+.mobileMenuActivator {
+  display: none!important;
+  @include breakpoint(mobile) {
+    display: flex!important;
+  }
+}
+
+.mobileMenuWrapper {
+  height: 100vh;
+  padding-bottom: $navigation-height + px;
+  width: 100%;
+  background: get-color('white');
+  position: absolute;
+  top: $navigation-height + px;
+  @include breakpoint(mobile) {
+    top: $mobile-navigation-height + px;
+    padding-bottom: $mobile-navigation-height + px;
+
+  }
+  display: none;
+  flex-direction: column;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+}
+
+.mobileMenuActive {
+  display: flex;
+}
+
+.mobileItemsWrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  > a {
+    padding: 20px 0;
+    border-bottom: 1px solid get-color('gray-light');
+    border-left: none;
+    border-right: none;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

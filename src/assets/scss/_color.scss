@@ -1,0 +1,20 @@
+$colors: (
+  "white": #FFFFFF,
+  "green": #01C38D,
+  "green-light": #B7EADC,
+  "green-dark": #08AF81,
+  "green-button": #02C38D,
+  "green-button-hover": #009E6D,
+  "dark": #313131,
+  "gray-dark": #737373,
+  "gray": #B1AFAF,
+  "gray-light": #D6D6D6,
+  "gray-lighter": #F5F5F5,
+  "black": #000000,
+  "red": #D34856,
+  "blue": #92add3,
+);
+
+@function get-color($key) {
+  @return map-get($colors, $key);
+}

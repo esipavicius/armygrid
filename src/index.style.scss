@@ -1,0 +1,17 @@
+@import '~react-toastify/scss/main';
+@import './assets/scss/main';
+
+:root {
+  --color-background: #{get-color(white)};
+
+  --main-bg-color: var(--color-background);
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', 'Helvetica', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(var(--color-background));
+  background-size: cover;
+}
