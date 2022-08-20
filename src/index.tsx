@@ -16,6 +16,7 @@ ReactDOM.render(
         <BrowserRouter>
             <Routes>
                 <Route path={ ROUTES.HOME.ROUTE } element={ <LazyHomePage /> } />
+                <Route path='*' element={ <LazyHomePage /> } />
             </Routes>
         </BrowserRouter>
 
