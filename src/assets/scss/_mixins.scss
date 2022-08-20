@@ -3,12 +3,36 @@
     @media (max-width: 767px) {
       @content;
     }
+  } @else if $size==smallmobile {
+    @media (max-width: 650px) {
+      @content;
+    }
+  } @else if $size==mobileplus {
+    @media (min-width: 650px) {
+      @content;
+    }
   } @else if $size==tablet {
     @media (min-width: 768px) {
       @content;
     }
   } @else if $size==desktop {
     @media (min-width: 1025px) {
+      @content;
+    }
+  } @else if $size==desktopbig {
+    @media (min-width: 1333px) {
+      @content;
+    }
+  } @else if $size==extradesktopbig {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  } @else if $size==extradesktopbigplus {
+    @media (min-width: 2200px) {
+      @content;
+    }
+  }  @else if $size==megadesktop {
+    @media (min-width: 2800px) {
       @content;
     }
   }

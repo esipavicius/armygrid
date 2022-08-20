@@ -1,23 +1,15 @@
-import './Home.module.scss';
+import styles from './Home.module.scss';
 
 import React from 'react';
 import {Menu} from "../partials/menu/Menu.component";
-
-// import TopSidebar from "../templates/top-sidebar/TopSidebar.component";
-// import Header from "../templates/home-page/header/Header.component";
-// import Stake from "../templates/home-page/stake/Stake.component";
-// import Info from "../templates/home-page/info/Info.component";
-// import Explain from "../templates/home-page/explain/Explain.component";
-// import HowWorks from "../templates/home-page/how-works/HowWorks.component";
-// import FAQ from "../templates/home-page/faq/FAQ.component";
-// import Footer from "../templates/footer/Footer.component";
+import {Head} from "../partials/page/home/head/Head.component";
 
 const HomePage = () => {
     return (
-        <section id="home-page">
+        <section id={ styles.homePage }>
             <Menu />
+            <Head />
 
-            <span>Test</span>
             {/*<nav id="menu">*/}
             {/*    <TopSidebar />*/}
             {/*</nav>*/}

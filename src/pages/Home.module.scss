@@ -1,0 +1,11 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/mixins';
+
+#homePage {
+  position: relative;
+  margin-top: #{$navigation-height}px;
+
+  @include breakpoint(mobile) {
+    margin-top: #{$navigation-height}px;
+  }
+}

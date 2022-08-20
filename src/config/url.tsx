@@ -47,6 +47,18 @@ const url = {
     targetBlank: false,
     local: true,
   },
+  CTA_PLAY_BETA: {
+    name: 'Play Beta',
+    href: `/`,
+    targetBlank: true,
+    local: false,
+  },
+  CTA_PRIVATE_SALE_INFO: {
+    name: 'Private Sale Info',
+    href: `/`,
+    targetBlank: true,
+    local: false,
+  },
 };
 
 export default url;

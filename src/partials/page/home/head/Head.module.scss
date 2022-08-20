@@ -1,0 +1,181 @@
+@import '../../../../assets/scss/color';
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+
+.homeHeadWrapper {
+  position: relative;
+  width: 100%;
+  height: 1024px;
+
+  @include breakpoint(smallmobile) {
+    height: 330px;
+  }
+
+  @include breakpoint(mobileplus) {
+    height: 420px;
+  }
+
+  @include breakpoint(tablet) {
+    height: 500px;
+  }
+
+  @include breakpoint(desktop) {
+    height: 733px;
+  }
+
+  @include breakpoint(desktopbig) {
+    height: 1024px;
+  }
+
+  @include breakpoint(extradesktopbig) {
+    height: 1300px;
+  }
+
+  @include breakpoint(extradesktopbig) {
+    height: 1600px;
+  }
+
+  @include breakpoint(megadesktop) {
+    height: 2000px;
+  }
+
+  .homeHeadBackground {
+    height: 100%;
+    background-image: url("~/public/images/home/head/Hero.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .headTextWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    @include breakpoint(desktopbig) {
+      height: 80%;
+    }
+
+    .headTextCenter {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @include breakpoint(mobileplus) {
+        font-size: 40%;
+      }
+
+      @include breakpoint(desktop) {
+        width: 40%;
+      }
+
+      .headTextTitle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: get-color('white');
+        opacity: 0.8;
+
+        @include breakpoint(mobileplus) {
+          font-size: 30px;
+        }
+
+        @include breakpoint(tablet) {
+          font-size: 40px;
+        }
+
+        @include breakpoint(desktopbig) {
+          font-size: 50px;
+        }
+      }
+
+      .headText {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+        color: get-color('white');
+        opacity: 0.8;
+
+        @include breakpoint(mobileplus) {
+          font-size: 14px;
+        }
+
+        @include breakpoint(tablet) {
+          font-size: 15px;
+        }
+
+        @include breakpoint(desktopbig) {
+          font-size: 16px;
+        }
+      }
+
+      .headCta {
+        background-image: url("~/public/images/home/head/cta.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: get-color('white');
+        font-weight: 500;
+        text-decoration: none;
+        position: relative;
+        padding: 14px 28px;
+        font-size: 14px;
+        left: -10px;
+        top: 10px;
+
+        @include breakpoint(mobileplus) {
+          padding: 18px 36px;
+          font-size: 16px;
+        }
+
+        @include breakpoint(tablet) {
+          padding: 20px 40px;
+          font-size: 18px;
+        }
+
+        @include breakpoint(desktopbig) {
+          padding: 25px 50px;
+          font-size: 20px;
+        }
+      }
+
+      .headCtaInfo {
+        font-weight: 400;
+        font-size: 10px;
+        margin-top: 14px;
+        color: get-color('orange');
+
+        @include breakpoint(mobileplus) {
+          font-size: 12px;
+          margin-top: 14px;
+        }
+
+        @include breakpoint(tablet) {
+          font-size: 14px;
+          margin-top: 16px;
+        }
+
+        @include breakpoint(desktopbig) {
+          font-size: 16px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .headBottomSquare {
+    position: absolute;
+    bottom: -46px;
+    text-align: center;
+    left: 0;
+    right: 0;
+
+    img {
+      width: 80px;
+    }
+  }
+}
