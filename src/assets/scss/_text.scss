@@ -1,0 +1,38 @@
+.headTextTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: get-color('white');
+  opacity: 0.8;
+
+  @include breakpoint(mobileplus) {
+    font-size: 30px;
+  }
+
+  @include breakpoint(tablet) {
+    font-size: 40px;
+  }
+
+  @include breakpoint(desktopbig) {
+    font-size: 50px;
+  }
+}
+
+.defaultText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: get-color('gray-dark');
+}
+
+.defaultLink {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: get-color('orange');
+  text-decoration: underline;
+  cursor: pointer;
+}

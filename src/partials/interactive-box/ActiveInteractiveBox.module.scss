@@ -1,0 +1,48 @@
+@import '../../assets/scss/color';
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/line';
+
+.activeInteractiveBox {
+  background: linear-gradient(45deg, get-color('black') 0%, get-color('lblack') 96.54%);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  color: get-color('white');
+  padding: 30px 25px;
+
+  .activeInteractiveBoxTitle {
+    color: get-color('yellow');
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    text-transform: uppercase;
+  }
+
+  .activeInteractiveBoxMetaWrapper {
+    width: 100%;
+    display: flex;
+
+    .activeInteractiveBoxMetaBox {
+      display: flex;
+      flex-flow: column;
+      flex-shrink: 0;
+      flex-grow: 1;
+      text-align: center;
+
+      .activeInteractiveBoxValue {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      .activeInteractiveBoxKey {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        color: get-color('gray');
+      }
+    }
+  }
+}

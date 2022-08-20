@@ -1,0 +1,18 @@
+@import '../../assets/scss/color';
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.inactiveInteractiveBox {
+  background-color: get-color('gray-lighter');
+  padding: 25px;
+  margin: 30px 0;
+  cursor: pointer;
+
+  .inactiveInteractiveBoxTitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: get-color('gray');
+    font-style: italic;
+  }
+}

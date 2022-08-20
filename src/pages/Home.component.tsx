@@ -1,14 +1,17 @@
 import styles from './Home.module.scss';
 
 import React from 'react';
+import about from '../config/data/about';
 import {Menu} from "../partials/menu/Menu.component";
 import {Head} from "../partials/page/home/head/Head.component";
+import {About} from "../partials/page/home/about/About.component";
 
 const HomePage = () => {
     return (
         <section id={ styles.homePage }>
             <Menu />
             <Head />
+            <About data={about} />
 
 
             {/*<nav id="menu">*/}

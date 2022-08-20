@@ -11,9 +11,11 @@ $colors: (
   "gray-light": #D6D6D6,
   "gray-lighter": #F5F5F5,
   "black": #000000,
+  "lblack": #272722,
   "red": #D34856,
   "blue": #92add3,
   "orange": #F2C335,
+  "yellow": #F1D40F,
 );
 
 @function get-color($key) {
