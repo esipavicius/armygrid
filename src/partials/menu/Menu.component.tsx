@@ -16,7 +16,6 @@ const menuItems: MenuItem[] = [
     url.TEAM,
     url.ROADMAP,
     url.WHITEPAPER,
-    url.SIGN_UP,
 ]
 
 const MenuItemContent: FC<MenuItem> = (menuItem: MenuItem) => {
@@ -98,10 +97,7 @@ export const Menu: FC = () => {
                 <div className={ styles.navBarWrapper }>
                     <div className={ styles.logoWrapper }>
                         <Link to={ url.HOME.href }>
-                            <img
-                                src={process.env.PUBLIC_URL + '/images/armygrid.svg'}
-                                alt='Armygrid logo'
-                            />
+                            <span>ARMYGRID</span>
                         </Link>
                     </div>
 
@@ -111,6 +107,12 @@ export const Menu: FC = () => {
                                 <MenuItemContent key={index} {...values} />
                             ))
                         }
+
+                        <div className={ styles.signUp }>
+                            <Link to={ url.SIGN_UP.href }>
+                                <span>{ url.SIGN_UP.name }</span>
+                            </Link>
+                        </div>
                     </div>
 
                     <div className={styles.buttonsWrapper}>
@@ -118,6 +120,12 @@ export const Menu: FC = () => {
                             className={ styles.mobileMenuActivator }
                             onClick={ toggleMobileNavigation }
                         >
+                            <div className={ styles.signUp }>
+                                <Link to={ url.SIGN_UP.href }>
+                                    <span>{ url.SIGN_UP.name }</span>
+                                </Link>
+                            </div>
+
                             <img
                                 src={
                                     !showMobileNavigation

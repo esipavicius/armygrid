@@ -2,7 +2,7 @@
 @import './assets/scss/main';
 
 :root {
-  --color-background: #{get-color(white)};
+  --color-background: #{get-color('white')};
 
   --main-bg-color: var(--color-background);
 }

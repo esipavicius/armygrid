@@ -43,9 +43,9 @@ const url = {
   },
   SIGN_UP: {
     name: 'Sign up',
-    href: `https://google.com`,
-    targetBlank: true,
-    local: false,
+    href: `/`,
+    targetBlank: false,
+    local: true,
   },
 };
 

@@ -25,14 +25,14 @@
   }
 
   .menuItemActive {
-    border-bottom: 3px solid get-color('red');
+    text-shadow: 0 4px 6px get-color('gray-dark');
   }
 }
 
 .navBarWrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 25% 75%;
 
   @include breakpoint(mobile) {
     grid-template-columns: 50% 50%;
@@ -63,6 +63,21 @@
   @include breakpoint(mobile) {
     max-width: 140px;
   }
+
+  a {
+    text-decoration: none;
+    color: get-color('black');
+
+    span {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 39px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-shadow: 0 4px 6px get-color('gray');
+    }
+  }
 }
 
 .itemsWrapper {
@@ -71,6 +86,18 @@
   color: get-color('white');
   font-weight: 700;
   font-size: 12px;
+  justify-content: flex-end;
+
+  a {
+    text-decoration: none;
+    color: get-color('black');
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    text-shadow: 0 4px 6px get-color('gray');
+    white-space: nowrap;
+  }
 
   @include breakpoint(mobile) {
     display: none;
@@ -78,12 +105,13 @@
 }
 .menuItem {
   padding: 5px 0;
+
   &:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 30px;
   }
 
   &:hover {
-    border-bottom: 3px solid get-color('red');
+    text-shadow: 0 4px 6px get-color('gray-dark');
   }
 }
 
@@ -93,9 +121,19 @@
 }
 
 .mobileMenuActivator {
-  display: none!important;
+  display: none !important;
+
   @include breakpoint(mobile) {
-    display: flex!important;
+    display: flex !important;
+
+    .signUp {
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+        color: get-color('black');
+      }
+    }
   }
 }
 
@@ -129,12 +167,25 @@
   overflow-y: scroll;
 
   > a {
+    color: get-color('black');
     padding: 20px 0;
+    font-weight: 500;
+    font-size: 16px;
     border-bottom: 1px solid get-color('gray-light');
+    text-shadow: 0 4px 6px get-color('gray');
     border-left: none;
     border-right: none;
+    text-decoration: none;
     &:last-child {
       border-bottom: none;
     }
+  }
+}
+
+.signUp {
+  a {
+    border: solid 1px get-color('black');
+    padding: 10px 20px;
+    text-shadow: none;
   }
 }
