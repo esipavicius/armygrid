@@ -53,7 +53,13 @@ export const About: FC<Props> = ({ data }) => {
                         Lead your chessman-like warriors with different upgradable skillsets and powers against other players to get through 21 levels with 16 maps to end up in the inevitable devastation of the Dark Queen’s <a className={ styles.defaultLink } href="/">apocalypse</a>.
                     </span>
 
-                    <img data-src={ aboutActive.image } className="lazyload"/>
+                    <div className={ styles.aboutImageWrapper }>
+                        <img data-src={ aboutActive.image } className="lazyload"/>
+                    </div>
+
+                    <span className={ styles.defaultText }>
+                        The game is set at 2-month servers ending in a devastating apocalypse.
+                    </span>
                 </div>
             </div>
         </Container>

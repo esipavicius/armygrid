@@ -6,6 +6,7 @@
 .homeAboutWrapper {
   display: flex;
   flex-wrap: wrap;
+  gap: 4%;
   margin-top: 70px;
 
   .headTextTitle {
@@ -18,7 +19,7 @@
   }
 
   .aboutLeft {
-    width: 50%;
+    width: 48%;
 
     @include breakpoint(mobile) {
       width: 100%;
@@ -30,14 +31,26 @@
   }
 
   .aboutRight {
-    width: 50%;
+    width: 48%;
 
     @include breakpoint(mobile) {
       width: 100%;
     }
 
     .aboutDescriptionWrapper {
-      padding-left: 40px;
+      display: flex;
+      flex-flow: column;
+    }
+
+    .aboutImageWrapper {
+      width: 100%;
+      background-color: get-color('gray-lighter');
+      text-align: center;
+      margin: 40px 0;
+
+      img {
+        height: 100%;
+      }
     }
   }
 }

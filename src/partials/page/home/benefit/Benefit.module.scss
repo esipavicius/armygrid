@@ -1,0 +1,46 @@
+@import '../../../../assets/scss/color';
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+@import '../../../../assets/scss/text';
+
+.benefitWrapperText {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 4%;
+
+  .benefitHalfPage {
+    width: 48%;
+
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
+
+    .headTextTitle {
+      color: get-color('black');
+      font-style: italic;
+      font-weight: 700;
+      font-size: 40px;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+  }
+
+  .benefitTextInfoWrapping {
+    display: flex;
+
+    .benefitTextInfoBox {
+      display: flex;
+      flex-flow: column;
+      flex-shrink: 0;
+      flex-grow: 1;
+      text-align: center;
+
+      .benefitTextInfoBoxValue {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 34px;
+      }
+    }
+  }
+}

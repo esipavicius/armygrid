@@ -27,6 +27,14 @@
   color: get-color('gray-dark');
 }
 
+.defaultTitleText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: get-color('dark');
+}
+
 .defaultLink {
   font-style: normal;
   font-weight: 400;
