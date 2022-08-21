@@ -5,6 +5,8 @@ import {FC} from 'react';
 import {Container} from "../../../container/Container.component";
 import {ButtonBlack} from "../../../button/ButtonBlack.component";
 import url from "../../../../config/url";
+import team from "../../../../config/data/team";
+import {Team} from "../../../team/Team.component";
 
 type Props = {};
 
@@ -42,6 +44,8 @@ export const Intro: FC<Props> = () => {
             <div className={ styles.homeIntroBottomHeader }>
                 <span className={ styles.headTextTitle }>The team behind army grid</span>
             </div>
+
+            <Team data={ team } />
         </Container>
     );
 };

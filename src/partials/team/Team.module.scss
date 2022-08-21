@@ -1,0 +1,38 @@
+@import '../../assets/scss/color';
+@import '../../assets/scss/line';
+@import '../../assets/scss/mixins';
+
+.teamWrapper {
+  background: radial-gradient(70% 90% at 50% 50%, get-color('white') 10%, get-color('gray-lighter') 100%);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+
+  .teamBoxWrapper {
+    width: 46%;
+    margin: 0 2%;
+
+    @include breakpoint(tablet) {
+      width: 28%;
+      margin: 0 2%;
+    }
+
+    @include breakpoint(tabletp) {
+      width: 21%;
+      margin: 0 2%;
+    }
+
+    @include breakpoint(desktop) {
+      width: 18%;
+      margin: 0 1%;
+    }
+
+    &:hover {
+      background-color: get-color('dark');
+    }
+  }
+
+  .teamBoxActive {
+    background-color: get-color('dark');
+  }
+}

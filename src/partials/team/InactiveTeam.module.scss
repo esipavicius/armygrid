@@ -1,0 +1,44 @@
+@import '../../assets/scss/color';
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/text';
+
+.inactiveTeamWrapper {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding: 10%;
+  width: 79%;
+
+  .defaultTitleText {
+    padding: 2px 0;
+  }
+
+  .inactiveTeamImageWrapper {
+    margin-bottom: 5px;
+
+    img {
+      width: 70%;
+    }
+  }
+
+  .inactiveTeamButton {
+    margin-bottom: 25px;
+    margin-top: 15px;
+
+    a {
+      width: 70%;
+      left: 0;
+    }
+  }
+}
+
+.activeTeam {
+  .defaultTitleText {
+    color: get-color('gray-lighter');
+  }
+
+  .defaultText {
+    color: get-color('gray');
+  }
+}
