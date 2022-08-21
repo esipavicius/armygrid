@@ -1,0 +1,126 @@
+@import '../../../../assets/scss/color';
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+@import '../../../../assets/scss/text';
+
+.homeSubscribeWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 150px;
+  background-color: get-color('gray-lighter');
+
+  .headTextTitle {
+    color: get-color('black');
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+  .right {
+    width: 100%;
+    position: relative;
+
+    @include breakpoint(desktop) {
+      width: 40%;
+    }
+  }
+
+  .leftWrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin: 0 25px;
+
+    @include breakpoint(desktop) {
+      margin: 0 100px;
+    }
+
+    .homeSubscribeTitleWrapper {
+    }
+  }
+
+  .left {
+    width: 100%;
+    padding: 25px 0;
+
+    @include breakpoint(desktop) {
+      width: 60%;
+      padding: 100px 0;
+    }
+  }
+
+  .homePartnerImageWrapper {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+
+    @include breakpoint(desktop) {
+      position: absolute;
+    }
+
+    img {
+      width: unset;
+      height: 400px;
+
+      @include breakpoint(desktop) {
+        width: 100%;
+        height: unset;
+      }
+    }
+  }
+
+  .subscribeInputWrapper {
+    width: 100%;
+    background-image: url("~/public/images/email/email-input.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: get-color('white');
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+    height: 100px;
+    margin-left: -20px;
+
+    input {
+      position: absolute;
+      top: 0;
+      bottom: 10%;
+      left: 11%;
+      background-color: unset;
+      border: none;
+      width: 55%;
+      color: get-color('white');
+
+      &::placeholder {
+        color: get-color('gray');
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      position: absolute;
+      top: 27%;
+      right: 7.5%;
+      background-color: unset;
+      border: none;
+      width: 20%;
+      height: 35%;
+      background-image: url("~/public/images/email/button.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      color: get-color('white');
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: -20px;
+    }
+  }
+}

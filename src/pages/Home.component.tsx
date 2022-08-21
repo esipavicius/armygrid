@@ -11,6 +11,7 @@ import {Asset} from "../partials/page/home/asset/Asset.component";
 import {Intro} from "../partials/page/home/intro/Intro.component";
 import {Footer} from "../partials/footer/Footer.component";
 import {Partner} from "../partials/page/home/partners/Partner.component";
+import {Subscribe} from "../partials/page/home/subscribe/Subscribe.component";
 
 const HomePage = () => {
     return (
@@ -21,6 +22,7 @@ const HomePage = () => {
             <Benefit />
             <Intro />
             <Asset data={assets} />
+            <Subscribe />
             <Partner />
             <Footer />
         </section>
