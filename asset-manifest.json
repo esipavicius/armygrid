@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/armygrid/static/css/main.81b8d4d4.css",
-    "main.js": "/armygrid/static/js/main.b0a04a9f.js",
-    "static/css/604.9f1290a8.chunk.css": "/armygrid/static/css/604.9f1290a8.chunk.css",
-    "static/js/604.4133a3f8.chunk.js": "/armygrid/static/js/604.4133a3f8.chunk.js",
+    "main.js": "/armygrid/static/js/main.d91e8933.js",
+    "static/css/299.4748716a.chunk.css": "/armygrid/static/css/299.4748716a.chunk.css",
+    "static/js/299.df553408.chunk.js": "/armygrid/static/js/299.df553408.chunk.js",
     "static/media/Hero.png": "/armygrid/static/media/Hero.fc091a3bd3d7443b3dce.png",
+    "static/media/waves.png": "/armygrid/static/media/waves.3f2dd79aa09fc99ad903.png",
     "static/media/dm-sans-v11-latin-italic.svg": "/armygrid/static/media/dm-sans-v11-latin-italic.ad07ab08a5effa5be615.svg",
     "static/media/dm-sans-v11-latin-500italic.svg": "/armygrid/static/media/dm-sans-v11-latin-500italic.a61ad61bf2dc94f0eac2.svg",
     "static/media/dm-sans-v11-latin-700italic.svg": "/armygrid/static/media/dm-sans-v11-latin-700italic.340e812b19b4aaed2128.svg",
+    "static/media/footer.png": "/armygrid/static/media/footer.7b430099cdbf17c053d1.png",
     "static/media/dm-sans-v11-latin-regular.svg": "/armygrid/static/media/dm-sans-v11-latin-regular.e8229917255023bd5246.svg",
     "static/media/dm-sans-v11-latin-500.svg": "/armygrid/static/media/dm-sans-v11-latin-500.7246078bdd6a710f34ca.svg",
     "static/media/dm-sans-v11-latin-700.svg": "/armygrid/static/media/dm-sans-v11-latin-700.fe67092f3c8d6fd6340c.svg",
@@ -29,6 +31,7 @@
     "static/media/dm-sans-v11-latin-500.eot": "/armygrid/static/media/dm-sans-v11-latin-500.800921969a4f3d762cb5.eot",
     "static/media/dm-sans-v11-latin-700.eot": "/armygrid/static/media/dm-sans-v11-latin-700.bd33a7056f614558bc21.eot",
     "static/media/dm-sans-v11-latin-regular.eot": "/armygrid/static/media/dm-sans-v11-latin-regular.c5644b2a4c865d46aa0c.eot",
+    "static/media/side-waves.png": "/armygrid/static/media/side-waves.0216c756aef00c8e287f.png",
     "static/media/dm-sans-v11-latin-700italic.woff2": "/armygrid/static/media/dm-sans-v11-latin-700italic.2141905dd2dfc99eb226.woff2",
     "static/media/dm-sans-v11-latin-500italic.woff2": "/armygrid/static/media/dm-sans-v11-latin-500italic.beba32c24b75f8b476ab.woff2",
     "static/media/dm-sans-v11-latin-italic.woff2": "/armygrid/static/media/dm-sans-v11-latin-italic.a98234da0620cf37e17b.woff2",
@@ -37,12 +40,12 @@
     "static/media/dm-sans-v11-latin-regular.woff2": "/armygrid/static/media/dm-sans-v11-latin-regular.71edbde4a8ed19eeef94.woff2",
     "index.html": "/armygrid/index.html",
     "main.81b8d4d4.css.map": "/armygrid/static/css/main.81b8d4d4.css.map",
-    "main.b0a04a9f.js.map": "/armygrid/static/js/main.b0a04a9f.js.map",
-    "604.9f1290a8.chunk.css.map": "/armygrid/static/css/604.9f1290a8.chunk.css.map",
-    "604.4133a3f8.chunk.js.map": "/armygrid/static/js/604.4133a3f8.chunk.js.map"
+    "main.d91e8933.js.map": "/armygrid/static/js/main.d91e8933.js.map",
+    "299.4748716a.chunk.css.map": "/armygrid/static/css/299.4748716a.chunk.css.map",
+    "299.df553408.chunk.js.map": "/armygrid/static/js/299.df553408.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b8d4d4.css",
-    "static/js/main.b0a04a9f.js"
+    "static/js/main.d91e8933.js"
   ]
 }
