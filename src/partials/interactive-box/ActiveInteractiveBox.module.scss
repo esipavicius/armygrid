@@ -21,6 +21,7 @@
   .activeInteractiveBoxMetaWrapper {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 
     .activeInteractiveBoxMetaBox {
       display: flex;
