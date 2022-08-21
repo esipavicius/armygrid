@@ -9,6 +9,7 @@ import {About} from "../partials/page/home/about/About.component";
 import {Benefit} from "../partials/page/home/benefit/Benefit.component";
 import {Asset} from "../partials/page/home/asset/Asset.component";
 import {Intro} from "../partials/page/home/intro/Intro.component";
+import {Footer} from "../partials/footer/Footer.component";
 
 const HomePage = () => {
     return (
@@ -19,6 +20,7 @@ const HomePage = () => {
             <Benefit />
             <Intro />
             <Asset data={assets} />
+            <Footer />
         </section>
     );
 };

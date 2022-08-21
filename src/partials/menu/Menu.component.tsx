@@ -18,7 +18,7 @@ const menuItems: MenuItem[] = [
     url.WHITEPAPER,
 ]
 
-const MenuItemContent: FC<MenuItem> = (menuItem: MenuItem) => {
+export const MenuItemContent: FC<MenuItem> = (menuItem: MenuItem) => {
     const location = useLocation();
 
     if (menuItem.local) {

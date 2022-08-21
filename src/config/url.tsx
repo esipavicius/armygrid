@@ -65,6 +65,36 @@ const url = {
     targetBlank: false,
     local: true,
   },
+  SOCIAL_V1: {
+    name: 'V1',
+    href: `/`,
+    targetBlank: true,
+    local: false,
+  },
+  SOCIAL_V2: {
+    name: 'V2',
+    href: `/`,
+    targetBlank: true,
+    local: false,
+  },
+  SOCIAL_V3: {
+    name: 'V3',
+    href: `/`,
+    targetBlank: true,
+    local: false,
+  },
+  PRIVACY: {
+    name: 'Privacy Policy',
+    href: `/`,
+    targetBlank: true,
+    local: false,
+  },
+  TERMS: {
+    name: 'Terms Of Use',
+    href: `/`,
+    targetBlank: true,
+    local: false,
+  },
 };
 
 export default url;
