@@ -1,0 +1,43 @@
+@import '../../../../assets/scss/color';
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+@import '../../../../assets/scss/text';
+
+.homePartnerWrapper {
+  text-align: center;
+  margin: 50px auto;
+  margin-bottom: 100px;
+
+  .headTextTitle {
+    color: get-color('black');
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+  .homePartnerBoxWrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .homePartnerBox {
+      display: flex;
+      flex-flow: column;
+      flex-wrap: wrap;
+      flex: 1 1 25%;
+      justify-content: end;
+      text-decoration: none;
+      min-height: 140px;
+    }
+  }
+
+  .homePartnerBoxImageWrapper {
+    height: 45px;
+
+    img {
+      height: 100%;
+    }
+  }
+}
