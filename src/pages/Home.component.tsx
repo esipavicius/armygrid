@@ -8,6 +8,7 @@ import {Head} from "../partials/page/home/head/Head.component";
 import {About} from "../partials/page/home/about/About.component";
 import {Benefit} from "../partials/page/home/benefit/Benefit.component";
 import {Asset} from "../partials/page/home/asset/Asset.component";
+import {Intro} from "../partials/page/home/intro/Intro.component";
 
 const HomePage = () => {
     return (
@@ -16,6 +17,7 @@ const HomePage = () => {
             <Head />
             <About data={about} />
             <Benefit />
+            <Intro />
             <Asset data={assets} />
         </section>
     );

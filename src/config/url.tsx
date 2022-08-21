@@ -59,6 +59,12 @@ const url = {
     targetBlank: true,
     local: false,
   },
+  CTA_READ_ONE_PAGER: {
+    name: 'Read One-Pager',
+    href: `/`,
+    targetBlank: false,
+    local: true,
+  },
 };
 
 export default url;

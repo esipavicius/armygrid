@@ -15,4 +15,12 @@
     color: get-color('gray');
     font-style: italic;
   }
+
+  &:hover {
+    background-color: get-color('gray-light');
+
+    .inactiveInteractiveBoxTitle {
+      color: get-color('gray-dark');
+    }
+  }
 }

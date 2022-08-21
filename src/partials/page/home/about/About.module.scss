@@ -43,13 +43,19 @@
     }
 
     .aboutImageWrapper {
+      background-image: url("~/public/images/side-waves.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
       width: 100%;
       background-color: get-color('gray-lighter');
       text-align: center;
       margin: 40px 0;
 
       img {
-        height: 100%;
+        max-width: 553px;
+        max-height: 553px;
+        width: 100%;
       }
     }
   }

@@ -36,7 +36,7 @@ export const Asset: FC<Props> = ({ data }) => {
                     </div>
 
                     <span className={ styles.defaultText }>
-                        The game is set at 2-month servers ending in a devastating apocalypse.
+                        The 2-month server allows users to explore various strategies while maintaining previously minted NFTs.
                     </span>
                 </div>
             </div>

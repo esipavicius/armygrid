@@ -9,6 +9,10 @@
   @include breakpoint(mobile) {
     width: 100%;
   }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .listArticleBox {
@@ -28,6 +32,22 @@
 
       img {
         height: 100%;
+      }
+    }
+  }
+
+  a {
+    &:hover {
+      .defaultTitleText {
+        color: get-color('black');
+      }
+
+      .defaultText {
+        color: get-color('dark');
+      }
+
+      .listArticleBoxImageWrapper {
+        background-color: get-color('gray-light');
       }
     }
   }

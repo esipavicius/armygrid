@@ -1,0 +1,19 @@
+@import '../../assets/scss/color';
+
+.blackButton {
+  background-image: url("~/public/images/black-button.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: get-color('white');
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 14px 28px;
+  font-size: 14px;
+  left: -10px;
+  top: 10px;
+
+  &:hover {
+    background-image: url("~/public/images/orange-button.png");
+  }
+}
