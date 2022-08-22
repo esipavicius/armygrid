@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/armygrid/static/css/main.81b8d4d4.css",
-    "main.js": "/armygrid/static/js/main.f874106c.js",
-    "static/css/303.980727c2.chunk.css": "/armygrid/static/css/303.980727c2.chunk.css",
-    "static/js/303.caf63f36.chunk.js": "/armygrid/static/js/303.caf63f36.chunk.js",
+    "main.js": "/armygrid/static/js/main.fdf2067f.js",
+    "static/css/221.140f9f5c.chunk.css": "/armygrid/static/css/221.140f9f5c.chunk.css",
+    "static/js/221.fe0a5daf.chunk.js": "/armygrid/static/js/221.fe0a5daf.chunk.js",
     "static/media/Hero.png": "/armygrid/static/media/Hero.fc091a3bd3d7443b3dce.png",
     "static/media/waves.png": "/armygrid/static/media/waves.3f2dd79aa09fc99ad903.png",
     "static/media/dm-sans-v11-latin-italic.svg": "/armygrid/static/media/dm-sans-v11-latin-italic.ad07ab08a5effa5be615.svg",
@@ -40,12 +40,12 @@
     "static/media/dm-sans-v11-latin-regular.woff2": "/armygrid/static/media/dm-sans-v11-latin-regular.71edbde4a8ed19eeef94.woff2",
     "index.html": "/armygrid/index.html",
     "main.81b8d4d4.css.map": "/armygrid/static/css/main.81b8d4d4.css.map",
-    "main.f874106c.js.map": "/armygrid/static/js/main.f874106c.js.map",
-    "303.980727c2.chunk.css.map": "/armygrid/static/css/303.980727c2.chunk.css.map",
-    "303.caf63f36.chunk.js.map": "/armygrid/static/js/303.caf63f36.chunk.js.map"
+    "main.fdf2067f.js.map": "/armygrid/static/js/main.fdf2067f.js.map",
+    "221.140f9f5c.chunk.css.map": "/armygrid/static/css/221.140f9f5c.chunk.css.map",
+    "221.fe0a5daf.chunk.js.map": "/armygrid/static/js/221.fe0a5daf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b8d4d4.css",
-    "static/js/main.f874106c.js"
+    "static/js/main.fdf2067f.js"
   ]
 }
