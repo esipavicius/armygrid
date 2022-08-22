@@ -3,6 +3,8 @@ import styles from './Home.module.scss';
 import React from 'react';
 import about from '../config/data/about';
 import assets from '../config/data/assets';
+import partners from "../config/data/partners";
+import tokenomics from "../config/data/tokenomics";
 import {Menu} from "../partials/menu/Menu.component";
 import {Head} from "../partials/page/home/head/Head.component";
 import {About} from "../partials/page/home/about/About.component";
@@ -12,6 +14,7 @@ import {Intro} from "../partials/page/home/intro/Intro.component";
 import {Footer} from "../partials/footer/Footer.component";
 import {Partner} from "../partials/page/home/partners/Partner.component";
 import {Subscribe} from "../partials/page/home/subscribe/Subscribe.component";
+import {Tokenomics} from "../partials/page/home/tokenomics/Tokenomics.component";
 
 const HomePage = () => {
     return (
@@ -22,8 +25,9 @@ const HomePage = () => {
             <Benefit />
             <Intro />
             <Asset data={assets} />
+            <Tokenomics data={tokenomics} />
             <Subscribe />
-            <Partner />
+            <Partner data={partners}/>
             <Footer />
         </section>
     );

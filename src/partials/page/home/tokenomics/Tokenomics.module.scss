@@ -1,0 +1,116 @@
+@import '../../../../assets/scss/color';
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+@import '../../../../assets/scss/text';
+
+.homeTokenomicsWrapper {
+  text-align: center;
+  margin: 50px auto;
+  margin-bottom: 100px;
+
+  .headTextTitle {
+    color: get-color('black');
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+  .homeTokenomicsBoxWrapper {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+
+    .homeTokenomicsBox {
+      position: relative;
+      flex-flow: column;
+      flex-shrink: 0;
+      flex-grow: 1;
+      height: 150px;
+      display: none;
+
+      @include breakpoint(desktop) {
+        display: flex;
+      }
+
+      .homeTokenomicsImageWrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        img {
+          border-top-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+      }
+
+      .homeTokenomicsBoxOver {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        .homeTokenomicsPercent {
+          position: absolute;
+          top: -35px;
+          right: 0;
+          left: 5px;
+          font-size: 14px !important;
+          color: get-color('gray-dark') !important;
+        }
+
+        .homeTokenomicsMoney {
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          height: 100%;
+          align-items: center;
+          font-weight: 700;
+          font-style: italic;
+        }
+
+        .homeTokenomicsTitle, .homeTokenomicsTitle2 {
+          position: absolute;
+          bottom: -40px;
+          right: 0;
+          left: -10px;
+          font-size: 14px !important;
+          color: get-color('gray-dark') !important;
+        }
+
+        .homeTokenomicsTitle2 {
+          bottom: -60px;
+        }
+      }
+    }
+  }
+
+  .tokenomicsFooterWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: center;
+
+    .tokenomicsFooterBox {
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      margin: 0 30px;
+
+      .headTextTitle {
+        color: get-color('black');
+        font-style: italic;
+        font-weight: 700;
+        font-size: 34px;
+        text-transform: uppercase;
+        opacity: 0.8;
+      }
+    }
+  }
+}
