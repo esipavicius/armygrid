@@ -27,7 +27,7 @@ const HomePage = () => {
             <Benefit />
             <Intro />
             <Asset data={assets} />
-            <Roadmap percentage={ 55 } roadmap={roadmap} />
+            <Roadmap percentage={ 10 } roadmap={roadmap} />
             <Tokenomics data={tokenomics} />
             <Subscribe />
             <Partner data={partners}/>
