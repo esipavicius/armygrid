@@ -6,7 +6,7 @@ const team = [
     image: process.env.PUBLIC_URL + `/images/team/mantas-s.png`,
     url: {
       name: 'View Profile',
-      href: `/`,
+      href: `https://www.linkedin.com/in/simkus-mantas-08199373/`,
       targetBlank: true,
       local: false,
     },
@@ -18,7 +18,7 @@ const team = [
     image: process.env.PUBLIC_URL + `/images/team/jonas-a.png`,
     url: {
       name: 'View Profile',
-      href: `/`,
+      href: `https://www.linkedin.com/in/jonasltu/`,
       targetBlank: true,
       local: false,
     },
@@ -30,7 +30,7 @@ const team = [
     image: process.env.PUBLIC_URL + `/images/team/irma-b.png`,
     url: {
       name: 'View Profile',
-      href: `/`,
+      href: `https://www.linkedin.com/in/irma-bobiniene-98548514b/`,
       targetBlank: true,
       local: false,
     },
@@ -78,7 +78,7 @@ const team = [
     image: process.env.PUBLIC_URL + `/images/team/tadas-v.png`,
     url: {
       name: 'View Profile',
-      href: `/`,
+      href: `https://www.linkedin.com/in/varanauskas/`,
       targetBlank: true,
       local: false,
     },
@@ -90,7 +90,7 @@ const team = [
     image: process.env.PUBLIC_URL + `/images/team/arturas-b.png`,
     url: {
       name: 'View Profile',
-      href: `/`,
+      href: `https://www.linkedin.com/in/arturasbobinas/`,
       targetBlank: true,
       local: false,
     },
@@ -102,7 +102,7 @@ const team = [
     image: process.env.PUBLIC_URL + `/images/team/vitalijus-b.png`,
     url: {
       name: 'View Profile',
-      href: `/`,
+      href: `https://www.linkedin.com/in/vitalijus-baika-07892071/`,
       targetBlank: true,
       local: false,
     },
