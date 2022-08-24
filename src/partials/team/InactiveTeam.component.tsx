@@ -23,7 +23,7 @@ export const InactiveTeam: FC<Props> = ({ data, active }) => {
             <span className={ styles.defaultText }>{ data.title }</span>
 
             <div className={ styles.inactiveTeamButton }>
-                <ButtonBlack url={ data.url } active={ active } />
+                <ButtonBlack url={ data.url } active={ active } visible={ data.previewButton } />
             </div>
         </div>
     );

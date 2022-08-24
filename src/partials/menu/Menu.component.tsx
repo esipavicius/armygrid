@@ -15,16 +15,15 @@ const menuItems: MenuItem[] = [
     url.ASSETS,
     url.TEAM,
     url.ROADMAP,
-    url.WHITEPAPER,
 ]
 
 export const MenuItemContent: FC<MenuItem> = (menuItem: MenuItem) => {
     const location = useLocation();
 
-    if (menuItem.local) {
+    if (menuItem.local && !menuItem.hash) {
          return (
             <Link
-                to={ menuItem.href }
+                to={{ pathname: menuItem.href, hash: menuItem.hash}}
                 className={classNames({
                     [styles.menuItem]: true,
                     [styles.menuItemActive]: location.pathname === menuItem.href,
@@ -38,12 +37,12 @@ export const MenuItemContent: FC<MenuItem> = (menuItem: MenuItem) => {
     } else {
         return (
             <a
-                href={ menuItem.href }
+                href={ menuItem.href + menuItem.hash }
                 className={classNames({
                     [styles.menuItem]: true,
                     [styles.menuItemActive]: location.pathname === menuItem.href,
                 })}
-                target={ menuItem.targetBlank ? '_blank' : '' }
+                target={ menuItem.targetBlank && !menuItem.hash ? '_blank' : '' }
                 rel="noreferrer"
             >
                 { menuItem.name }

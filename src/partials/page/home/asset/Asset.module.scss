@@ -27,6 +27,10 @@
 
     .assetTitleWrapper {
       padding: 0 0 50px 35px;
+
+      @include breakpoint(mobile) {
+        padding: 50px 0 50px 35px;
+      }
     }
   }
 

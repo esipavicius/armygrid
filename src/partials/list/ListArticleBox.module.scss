@@ -28,10 +28,22 @@
       height: 250px;
       width: 100%;
       background-color: get-color('gray-lighter');
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include breakpoint(mobile) {
+        height: unset;
+      }
 
       img {
         height: 100%;
+
+        @include breakpoint(mobile) {
+          width: 100%;
+          max-width: 200px;
+          height: unset;
+        }
       }
     }
   }

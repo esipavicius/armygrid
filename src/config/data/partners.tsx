@@ -8,6 +8,7 @@ const partner = [
     url: {
       name: 'Kongregate.com',
       href: `https://kongregate.com`,
+      hash: '',
       targetBlank: true,
       local: false,
     },
@@ -21,6 +22,7 @@ const partner = [
     url: {
       name: 'Crazygames.com',
       href: `https://crazygames.com`,
+      hash: '',
       targetBlank: true,
       local: false,
     },
@@ -34,6 +36,7 @@ const partner = [
     url: {
       name: 'Itch.com',
       href: `https://itch.com`,
+      hash: '',
       targetBlank: true,
       local: false,
     },
@@ -47,6 +50,7 @@ const partner = [
     url: {
       name: 'Bitlocus.com',
       href: `https://bitlocus.com`,
+      hash: '',
       targetBlank: true,
       local: false,
     },

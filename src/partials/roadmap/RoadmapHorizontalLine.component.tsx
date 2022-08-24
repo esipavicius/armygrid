@@ -56,204 +56,206 @@ export const RoadmapHorizontalLine: FC<Props> = ({ percentage, roadmap }) => {
 
     return (
         <div className={ styles.roadmapHorizontalLineWrapper }>
-            <div className={ styles.roadmapHorizontalLineTitlesWrapper }>
-                <div className={ styles.roadmapHorizontalLineTitlesBoxQ1 }>
-                    <span className={ styles.headTextTitle }>{ roadmap[0].title }</span>
-                    <span className={ styles.defaultText }>{ roadmap[0].subtitle }</span>
-                </div>
-
-                <div className={ styles.roadmapHorizontalLineTitlesBoxQ2 }>
-                    <span className={ styles.headTextTitle }>{ roadmap[1].title }</span>
-                    <span className={ styles.defaultText }>{ roadmap[1].subtitle }</span>
-                </div>
-
-                <div className={ styles.roadmapHorizontalLineTitlesBoxQ3 }>
-                    <span className={ styles.headTextTitle }>{ roadmap[2].title }</span>
-                    <span className={ styles.defaultText }>{ roadmap[2].subtitle }</span>
-                </div>
-
-                <div className={ styles.roadmapHorizontalLineTitlesBoxQ4 }>
-                    <span className={ styles.headTextTitle }>{ roadmap[3].title }</span>
-                    <span className={ styles.defaultText }>{ roadmap[3].subtitle }</span>
-                </div>
-
-                <div className={ styles.roadmapHorizontalLineTitlesBoxQ5 }>
-                    <span className={ styles.headTextTitle }>{ roadmap[4].title }</span>
-                    <span className={ styles.defaultText }>{ roadmap[4].subtitle }</span>
-                </div>
-
-                <div className={ styles.roadmapHorizontalLineTitlesBoxQ6 }>
-                    <span className={ styles.headTextTitle }>{ roadmap[5].title }</span>
-                    <span className={ styles.defaultText }>{ roadmap[5].subtitle }</span>
-                </div>
-            </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="29" viewBox={`0 0 ${lineBoxValue} 29`} fill="none">
-                <rect x="14" y="12" width={ lineBoxValue - 29 } height="5" fill="#D9D9D9"/>
-
-                { renderCurrentLine() }
-                { renderFirstActiveSquare() }
-                { renderSquare2() }
-                { renderSquare3() }
-                { renderSquare4() }
-                { renderSquare5() }
-                { renderSquare6() }
-
-                <defs>
-                    <pattern id="activeRectangle" viewBox="0,0,30,30" width="100%" height="100%">
-                        <image href={ process.env.PUBLIC_URL + `/images/rectangle.png` } width="30" height="30" />
-                    </pattern>
-                </defs>
-            </svg>
-
-            <div className={ styles.roadmapHorizontalLineMetaWrapper }>
-                <div className={ styles.roadmapHorizontalLineMetaBoxQ1 }>
-                    <div className={ styles.roadmapHorizontalLineImage }>
-                        {
-                            roadmap[0].image && (
-                                <img
-                                    className="lazyload"
-                                    data-src={ roadmap[0].image }
-                                />
-                            )
-                        }
+            <div className={ styles.roadmapHorizontalLineScroll }>
+                <div className={ styles.roadmapHorizontalLineTitlesWrapper }>
+                    <div className={ styles.roadmapHorizontalLineTitlesBoxQ1 }>
+                        <span className={ styles.headTextTitle }>{ roadmap[0].title }</span>
+                        <span className={ styles.defaultText }>{ roadmap[0].subtitle }</span>
                     </div>
 
-                    <div className={ styles.roadmapHorizontalLineMeta }>
-                        {
-                            roadmap[0].meta.map((metaData: any) => {
-                                return (
-                                    <div key={ metaData.title }>
-                                        <img
-                                            className="lazyload"
-                                            data-src={ process.env.PUBLIC_URL + `/images/rectangle.png` }
-                                        />
+                    <div className={ styles.roadmapHorizontalLineTitlesBoxQ2 }>
+                        <span className={ styles.headTextTitle }>{ roadmap[1].title }</span>
+                        <span className={ styles.defaultText }>{ roadmap[1].subtitle }</span>
+                    </div>
 
-                                        <span className={ styles.defaultText }>{ metaData.title }</span>
-                                    </div>
-                                );
-                            })
-                        }
+                    <div className={ styles.roadmapHorizontalLineTitlesBoxQ3 }>
+                        <span className={ styles.headTextTitle }>{ roadmap[2].title }</span>
+                        <span className={ styles.defaultText }>{ roadmap[2].subtitle }</span>
+                    </div>
+
+                    <div className={ styles.roadmapHorizontalLineTitlesBoxQ4 }>
+                        <span className={ styles.headTextTitle }>{ roadmap[3].title }</span>
+                        <span className={ styles.defaultText }>{ roadmap[3].subtitle }</span>
+                    </div>
+
+                    <div className={ styles.roadmapHorizontalLineTitlesBoxQ5 }>
+                        <span className={ styles.headTextTitle }>{ roadmap[4].title }</span>
+                        <span className={ styles.defaultText }>{ roadmap[4].subtitle }</span>
+                    </div>
+
+                    <div className={ styles.roadmapHorizontalLineTitlesBoxQ6 }>
+                        <span className={ styles.headTextTitle }>{ roadmap[5].title }</span>
+                        <span className={ styles.defaultText }>{ roadmap[5].subtitle }</span>
                     </div>
                 </div>
 
-                <div className={ styles.roadmapHorizontalLineMetaBoxQ2 }>
-                    <div className={ styles.roadmapHorizontalLineImage }>
-                        {
-                            roadmap[1].image && (
-                                <img
-                                    className="lazyload"
-                                    data-src={ roadmap[1].image }
-                                />
-                            )
-                        }
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="29" viewBox={`0 0 ${lineBoxValue} 29`} fill="none">
+                    <rect x="14" y="12" width={ lineBoxValue - 29 } height="5" fill="#D9D9D9"/>
+
+                    { renderCurrentLine() }
+                    { renderFirstActiveSquare() }
+                    { renderSquare2() }
+                    { renderSquare3() }
+                    { renderSquare4() }
+                    { renderSquare5() }
+                    { renderSquare6() }
+
+                    <defs>
+                        <pattern id="activeRectangle" viewBox="0,0,30,30" width="100%" height="100%">
+                            <image href={ process.env.PUBLIC_URL + `/images/rectangle.png` } width="30" height="30" />
+                        </pattern>
+                    </defs>
+                </svg>
+
+                <div className={ styles.roadmapHorizontalLineMetaWrapper }>
+                    <div className={ styles.roadmapHorizontalLineMetaBoxQ1 }>
+                        <div className={ styles.roadmapHorizontalLineImage }>
+                            {
+                                roadmap[0].image && (
+                                    <img
+                                        className="lazyload"
+                                        data-src={ roadmap[0].image }
+                                    />
+                                )
+                            }
+                        </div>
+
+                        <div className={ styles.roadmapHorizontalLineMeta }>
+                            {
+                                roadmap[0].meta.map((metaData: any) => {
+                                    return (
+                                        <div key={ metaData.title }>
+                                            <img
+                                                className="lazyload"
+                                                data-src={ process.env.PUBLIC_URL + `/images/rectangle.png` }
+                                            />
+
+                                            <span className={ styles.defaultText }>{ metaData.title }</span>
+                                        </div>
+                                    );
+                                })
+                            }
+                        </div>
                     </div>
 
-                    <div className={ styles.roadmapHorizontalLineMeta }>
-                        {
-                            roadmap[1].meta.map((metaData: any) => {
-                                return (
-                                    <div key={ metaData.title }>
-                                        <img
-                                            className="lazyload"
-                                            data-src={ process.env.PUBLIC_URL + `/images/rectangle.png` }
-                                        />
+                    <div className={ styles.roadmapHorizontalLineMetaBoxQ2 }>
+                        <div className={ styles.roadmapHorizontalLineImage }>
+                            {
+                                roadmap[1].image && (
+                                    <img
+                                        className="lazyload"
+                                        data-src={ roadmap[1].image }
+                                    />
+                                )
+                            }
+                        </div>
 
-                                        <span className={ styles.defaultText }>{ metaData.title }</span>
-                                    </div>
-                                );
-                            })
-                        }
-                    </div>
-                </div>
+                        <div className={ styles.roadmapHorizontalLineMeta }>
+                            {
+                                roadmap[1].meta.map((metaData: any) => {
+                                    return (
+                                        <div key={ metaData.title }>
+                                            <img
+                                                className="lazyload"
+                                                data-src={ process.env.PUBLIC_URL + `/images/rectangle.png` }
+                                            />
 
-                <div className={ styles.roadmapHorizontalLineMetaBoxQ3 }>
-                    <div className={ styles.roadmapHorizontalLineImage }>
-                        {
-                            roadmap[2].image && (
-                                <img
-                                    className="lazyload"
-                                    data-src={ roadmap[2].image }
-                                />
-                            )
-                        }
-                    </div>
-
-                    <div className={ styles.roadmapHorizontalLineMeta }>
-                        {
-                            roadmap[2].meta.map((metaData: any) => {
-                                return (
-                                    <div key={ metaData.title }>
-                                        <img
-                                            className="lazyload"
-                                            data-src={ process.env.PUBLIC_URL + `/images/rectangle.png` }
-                                        />
-
-                                        <span className={ styles.defaultText }>{ metaData.title }</span>
-                                    </div>
-                                );
-                            })
-                        }
-                    </div>
-                </div>
-
-                <div className={ styles.roadmapHorizontalLineMetaBoxQ4 }>
-                    <div className={ styles.roadmapHorizontalLineImage }>
-                        {
-                            roadmap[3].image && (
-                                <img
-                                    className="lazyload"
-                                    data-src={ roadmap[3].image }
-                                />
-                            )
-                        }
+                                            <span className={ styles.defaultText }>{ metaData.title }</span>
+                                        </div>
+                                    );
+                                })
+                            }
+                        </div>
                     </div>
 
-                    <div className={ styles.roadmapHorizontalLineMeta }>
-                        {
-                            roadmap[3].meta.map((metaData: any) => {
-                                return (
-                                    <div key={ metaData.title }>
-                                        <img
-                                            className="lazyload"
-                                            data-src={ process.env.PUBLIC_URL + `/images/rectangle.png` }
-                                        />
+                    <div className={ styles.roadmapHorizontalLineMetaBoxQ3 }>
+                        <div className={ styles.roadmapHorizontalLineImage }>
+                            {
+                                roadmap[2].image && (
+                                    <img
+                                        className="lazyload"
+                                        data-src={ roadmap[2].image }
+                                    />
+                                )
+                            }
+                        </div>
 
-                                        <span className={ styles.defaultText }>{ metaData.title }</span>
-                                    </div>
-                                );
-                            })
-                        }
+                        <div className={ styles.roadmapHorizontalLineMeta }>
+                            {
+                                roadmap[2].meta.map((metaData: any) => {
+                                    return (
+                                        <div key={ metaData.title }>
+                                            <img
+                                                className="lazyload"
+                                                data-src={ process.env.PUBLIC_URL + `/images/rectangle.png` }
+                                            />
+
+                                            <span className={ styles.defaultText }>{ metaData.title }</span>
+                                        </div>
+                                    );
+                                })
+                            }
+                        </div>
                     </div>
-                </div>
 
-                <div className={ styles.roadmapHorizontalLineMetaBoxQ5 }>
-                    <div className={ styles.roadmapHorizontalLineImage }>
-                        {
-                            roadmap[4].image && (
-                                <img
-                                    className="lazyload"
-                                    data-src={ roadmap[4].image }
-                                />
-                            )
-                        }
+                    <div className={ styles.roadmapHorizontalLineMetaBoxQ4 }>
+                        <div className={ styles.roadmapHorizontalLineImage }>
+                            {
+                                roadmap[3].image && (
+                                    <img
+                                        className="lazyload"
+                                        data-src={ roadmap[3].image }
+                                    />
+                                )
+                            }
+                        </div>
+
+                        <div className={ styles.roadmapHorizontalLineMeta }>
+                            {
+                                roadmap[3].meta.map((metaData: any) => {
+                                    return (
+                                        <div key={ metaData.title }>
+                                            <img
+                                                className="lazyload"
+                                                data-src={ process.env.PUBLIC_URL + `/images/rectangle.png` }
+                                            />
+
+                                            <span className={ styles.defaultText }>{ metaData.title }</span>
+                                        </div>
+                                    );
+                                })
+                            }
+                        </div>
                     </div>
 
-                    <div className={ styles.roadmapHorizontalLineMeta }>
-                        {
-                            roadmap[4].meta.map((metaData: any) => {
-                                return (
-                                    <div key={ metaData.title }>
-                                        <img
-                                            className="lazyload"
-                                            data-src={ process.env.PUBLIC_URL + `/images/rectangle.png` }
-                                        />
+                    <div className={ styles.roadmapHorizontalLineMetaBoxQ5 }>
+                        <div className={ styles.roadmapHorizontalLineImage }>
+                            {
+                                roadmap[4].image && (
+                                    <img
+                                        className="lazyload"
+                                        data-src={ roadmap[4].image }
+                                    />
+                                )
+                            }
+                        </div>
 
-                                        <span className={ styles.defaultText }>{ metaData.title }</span>
-                                    </div>
-                                );
-                            })
-                        }
+                        <div className={ styles.roadmapHorizontalLineMeta }>
+                            {
+                                roadmap[4].meta.map((metaData: any) => {
+                                    return (
+                                        <div key={ metaData.title }>
+                                            <img
+                                                className="lazyload"
+                                                data-src={ process.env.PUBLIC_URL + `/images/rectangle.png` }
+                                            />
+
+                                            <span className={ styles.defaultText }>{ metaData.title }</span>
+                                        </div>
+                                    );
+                                })
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

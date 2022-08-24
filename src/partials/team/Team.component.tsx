@@ -4,6 +4,7 @@ import * as React from 'react';
 import {FC, useState} from 'react';
 import {reloadDocumentLazyImages} from "../../config/image";
 import {InactiveTeam} from "./InactiveTeam.component";
+import url from "../../config/url";
 
 type Props = {
     data: any,
@@ -23,7 +24,7 @@ export const Team: FC<Props> = ({ data }) => {
     }
 
     return (
-        <div className={ styles.teamWrapper }>
+        <div className={ styles.teamWrapper }  id={ url.TEAM.hash.substring(1) }>
             {
                 data.map((teamData: any) => {
                     const teamActiveClassName = teamActive.key === teamData.key ? styles.teamBoxActive : '';

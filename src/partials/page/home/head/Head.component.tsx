@@ -9,7 +9,7 @@ type Props = {};
 
 export const Head: FC<Props> = () => {
     return (
-        <div className={ styles.homeHeadWrapper }>
+        <div className={ styles.homeHeadWrapper } id={ url.HOME.hash.substring(1) }>
             <div className={ styles.homeHeadBackground }>
                 <Container customClassName={ styles.headTextWrapper }>
                     <div className={ styles.headTextCenter }>

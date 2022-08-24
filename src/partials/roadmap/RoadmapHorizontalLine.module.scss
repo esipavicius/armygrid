@@ -4,8 +4,29 @@
 @import '../../assets/scss/text';
 
 .roadmapHorizontalLineWrapper {
-  margin-top: 130px;
-  margin-bottom: 270px;
+  padding: 100px 0 250px 0;
+  overflow-y: scroll;
+  white-space: nowrap;
+  width: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include breakpoint(desktop) {
+    overflow-y: unset;
+    white-space: unset;
+  }
+
+  .roadmapHorizontalLineScroll {
+    width: 1000px;
+
+    @include breakpoint(desktop) {
+      width: 95%;
+    }
+  }
 
   .headTextTitle {
     color: get-color('black');

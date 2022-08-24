@@ -6,6 +6,7 @@ import {Container} from "../../../container/Container.component";
 import {InactiveInteractiveBox} from "../../../interactive-box/InactiveInteractiveBox.component";
 import {ActiveInteractiveBox} from "../../../interactive-box/ActiveInteractiveBox.component";
 import {reloadDocumentLazyImages} from "../../../../config/image";
+import url from "../../../../config/url";
 
 type Props = {
     data: any,
@@ -21,7 +22,7 @@ export const Asset: FC<Props> = ({ data }) => {
 
     return (
         <Container customClassName={ styles.homeAssetWrapper }>
-            <div className={ styles.assetLeft }>
+            <div className={ styles.assetLeft } id={ url.ASSETS.hash.substring(1) }>
                 <div className={ styles.assetDescriptionWrapper }>
                     <span className={ styles.defaultText }>
                         All in-game NFTs have function and power to boost the performance of your troops or cities. Additionaly, you can increase the power of your NFT items by purchasing upgrades.

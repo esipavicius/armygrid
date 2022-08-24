@@ -13,7 +13,7 @@ type Props = {};
 export const Intro: FC<Props> = () => {
     return (
         <Container>
-            <div className={ styles.homeIntroWrapper }>
+            <div className={ styles.homeIntroWrapper } id={ url.AGT_TOKEN.hash.substring(1) }>
                 <div className={ styles.left }>
                     <img
                         className="lazyload"
