@@ -44,9 +44,9 @@ const partner = [
   {
     key: 'bitlocus',
     title: 'Bitlocus.com',
-    value: 'Game publisher',
-    image: null,
-    height: '45px',
+    value: 'Crypto-fiat gateway, token listing, IEO',
+    image: process.env.PUBLIC_URL + `/images/partner/bitlocus.png`,
+    height: '60px',
     url: {
       name: 'Bitlocus.com',
       href: `https://bitlocus.com`,
