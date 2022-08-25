@@ -21,7 +21,7 @@
   }
 
   .roadmapHorizontalLineScroll {
-    width: 1000px;
+    width: 1140px;
 
     @include breakpoint(desktop) {
       width: 95%;
@@ -44,10 +44,14 @@
     .roadmapHorizontalLineTitlesBoxQ1 {
       position: absolute;
       top: -70px;
-      left: -5%;
+      left: -3%;
       display: flex;
       flex-flow: column;
       width: 150px;
+
+      @include breakpoint(desktop) {
+        left: -5%;
+      }
     }
 
     .roadmapHorizontalLineTitlesBoxQ2 {
@@ -113,7 +117,7 @@
       img {
         width: 12px;
         height: 12px;
-        padding-right: 20px;
+        padding-right: 10px;
       }
 
       .defaultText {
